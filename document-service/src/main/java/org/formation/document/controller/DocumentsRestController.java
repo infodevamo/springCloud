@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author David Thibau from Paul Chapman
  */
 @RestController
-@RequestMapping("/documents-service")
+@RequestMapping("/documents")
 public class DocumentsRestController {
 
 	protected Logger logger = Logger.getLogger(DocumentsRestController.class

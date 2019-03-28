@@ -1,0 +1,32 @@
+spring:
+  freemarker:
+    enabled: false           # Ignore Eureka dashboard FreeMarker templates
+  thymeleaf:
+    cache: false             # Allow Thymeleaf templates to be reloaded at runtime
+    prefix: classpath:/templates/    # Trailing / mandatory
+    
+server:
+  port: 2222
+  
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        connect-timeout: 50000
+        read-timeout: 50000
+  
+logging:
+  level:
+    org.formation.controller.NotificationClient: WARN
+
+
+spring.jpa.hibernate.ddl-auto: create-drop
+spring.jpa.hibernate.naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+spring.jpa.database: H2
+spring.jpa.show-sql: true
+ 
+
+
+  

@@ -16,29 +16,3 @@ error:
 # HTTP Server
 server:
   port: 3333   # HTTP (Tomcat) port
-
-# Discovery Server Access
-eureka:
-  client:
-    service-url:
-      defaultZone: http://annuaire:1111/eureka/
-  instance:
-    lease-renewal-interval-in-seconds: 30 
-
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-        - env
-        - beans
-        - health
-        - metrics
-        - httptrace
-        - info
-        - mappings
-  endpoint:
-    health:
-      show-details: always
-

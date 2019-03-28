@@ -1,0 +1,22 @@
+server:
+  port: 9090
+
+notification:
+  port: 2525
+  host: localhost
+  username: fake
+  password: fake
+  
+---
+spring:
+  profiles: notification-p1
+
+server:
+  port: 9090
+
+---
+spring:
+  profiles: notification-p2
+
+server:
+  port: 9091

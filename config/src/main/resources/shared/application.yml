@@ -1,0 +1,27 @@
+# Discovery Server Access
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:1111/eureka/,http://peer2:1112/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 30
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - env
+        - beans
+        - health
+        - metrics
+        - httptrace
+        - mappings
+        - refresh
+        - info
+        - routes
+  endpoint:
+    health:
+      show-details: always
+
