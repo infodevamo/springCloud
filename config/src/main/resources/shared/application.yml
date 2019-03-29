@@ -2,7 +2,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://peer1:1111/eureka/,http://peer2:1112/eureka/
+      defaultZone: http://annuaire:1111/eureka/
   instance:
     lease-renewal-interval-in-seconds: 30
 
@@ -21,7 +21,15 @@ management:
         - refresh
         - info
         - routes
+        - hystrix.stream
   endpoint:
     health:
       show-details: always
+      
+spring:
+  zipkin:
+    base-url: http://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 1
 

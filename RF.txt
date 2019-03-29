@@ -1,1 +1,30 @@
 curl -XPOST -H "Content-Type: application/json" http://localhost:3333/actuator/refresh
+
+docker run -d -p 9411:9411 openzipkin/zipkin
+
+docker images
+docker ps
+docker ps id_container
+#Builder un Docker file
+docker build . -t config
+docker run -p 8888:8888 config
+set JAVA_HOME=C:\Users\Administrateur\Desktop\work\jdk1.8.0_172
+
+# Build
+docker-compose build
+# Démarrage en mode démo
+docker-compose up -d
+
+#Arret
+docker-compose stop
+
+# Logs
+docker logs -f e13d5a438448
+
+#Scaling un MS
+docker-compose scale notification-service=3
+
+
+#Acces Eureka
+http://annuaire:1111/
+

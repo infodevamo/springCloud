@@ -2,40 +2,39 @@
   "groups": [
     {
       "name": "notification",
-      "type": "org.formation.MailConfigurationProperties",
-      "sourceType": "org.formation.MailConfigurationProperties"
+      "type": "org.formation.MailConfiguration",
+      "sourceType": "org.formation.MailConfiguration"
     },
     {
       "name": "notification",
-      "type": "org.formation.MailConfiguration",
-      "sourceType": "org.formation.MailConfiguration"
+      "type": "org.formation.MailConfigurationProperties",
+      "sourceType": "org.formation.MailConfigurationProperties"
     }
   ],
   "properties": [
     {
       "name": "notification.auth",
       "type": "java.lang.Boolean",
-      "sourceType": "org.formation.MailConfigurationProperties"
+      "sourceType": "org.formation.MailConfiguration",
+      "defaultValue": false
     },
     {
       "name": "notification.auth",
       "type": "java.lang.Boolean",
-      "sourceType": "org.formation.MailConfiguration"
+      "sourceType": "org.formation.MailConfigurationProperties",
+      "defaultValue": false
     },
     {
       "name": "notification.debug",
       "type": "java.lang.Boolean",
-      "sourceType": "org.formation.MailConfigurationProperties"
+      "sourceType": "org.formation.MailConfiguration",
+      "defaultValue": false
     },
     {
       "name": "notification.debug",
       "type": "java.lang.Boolean",
-      "sourceType": "org.formation.MailConfiguration"
-    },
-    {
-      "name": "notification.host",
-      "type": "java.lang.String",
-      "sourceType": "org.formation.MailConfigurationProperties"
+      "sourceType": "org.formation.MailConfigurationProperties",
+      "defaultValue": false
     },
     {
       "name": "notification.host",
@@ -43,7 +42,7 @@
       "sourceType": "org.formation.MailConfiguration"
     },
     {
-      "name": "notification.password",
+      "name": "notification.host",
       "type": "java.lang.String",
       "sourceType": "org.formation.MailConfigurationProperties"
     },
@@ -53,13 +52,25 @@
       "sourceType": "org.formation.MailConfiguration"
     },
     {
-      "name": "notification.port",
-      "type": "java.lang.Integer",
+      "name": "notification.password",
+      "type": "java.lang.String",
       "sourceType": "org.formation.MailConfigurationProperties"
     },
     {
       "name": "notification.port",
       "type": "java.lang.Integer",
+      "sourceType": "org.formation.MailConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "notification.port",
+      "type": "java.lang.Integer",
+      "sourceType": "org.formation.MailConfigurationProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "notification.protocol",
+      "type": "java.lang.String",
       "sourceType": "org.formation.MailConfiguration"
     },
     {
@@ -68,29 +79,26 @@
       "sourceType": "org.formation.MailConfigurationProperties"
     },
     {
-      "name": "notification.protocol",
+      "name": "notification.startls",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.formation.MailConfiguration",
+      "defaultValue": false
+    },
+    {
+      "name": "notification.startls",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.formation.MailConfigurationProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "notification.username",
       "type": "java.lang.String",
-      "sourceType": "org.formation.MailConfiguration"
-    },
-    {
-      "name": "notification.startls",
-      "type": "java.lang.Boolean",
-      "sourceType": "org.formation.MailConfigurationProperties"
-    },
-    {
-      "name": "notification.startls",
-      "type": "java.lang.Boolean",
       "sourceType": "org.formation.MailConfiguration"
     },
     {
       "name": "notification.username",
       "type": "java.lang.String",
       "sourceType": "org.formation.MailConfigurationProperties"
-    },
-    {
-      "name": "notification.username",
-      "type": "java.lang.String",
-      "sourceType": "org.formation.MailConfiguration"
     }
   ],
   "hints": []
